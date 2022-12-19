@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Boby - La Tienda de Mascotas</title>
+    <script type="text/javascript">
+      function trabajeconnosotros() {
+        var str1 = document.getElementById("nombre").value;
+        var str2 = document.getElementById("apellido").value;
+        var str3 = document.getElementById("mail").value;
+        var str4 = document.getElementById("edad").value;
+        var str5 = document.getElementById("telefono").value;
+          var str7 = document.getElementById("profesion").value;
+        var str9 = document.getElementById("msg").value;
+        var str10 = document.getElementById("adjunto").value;
+
+        if (str1 == "") {
+          alert("Debe digitar su Nombre");
+        } else  if (str2 == "") {
+          alert("Debe digitar su Apellido");
+        } else  if (str3 == "") {
+          alert("Debe digitar su Correo Electronico");
+        } else if (str4 == "") {
+          alert("Debe digitar su Edad");
+        } else  if (str5 == "") {
+          alert("Debe digitar su Telefono");
+        } else  if (str7 == "") {
+          alert("Debe digitar su Profesión");
+        } else  if (str9 == "") {
+          alert("Debe digitar su comentario");
+        } else if (str10 == "") {
+          alert("Debe adjuntar su curriculum");
+        } else {
+          alert("Mensaje Enviado");
+          document.getElementById("nombre").value="";
+          document.getElementById("apellido").value="";
+          document.getElementById("mail").value="";
+          document.getElementById("edad").value="";
+          document.getElementById("telefono").value="";
+          document.getElementById("profesion").value="";
+          document.getElementById("msg").value="";
+          document.getElementById("adjunto").value="";
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+
+  <body>
+    <header id="main-header">
+      <a id="logo-header" href="#">
+        <span class="site-name" style="font-size: 40px">Boby</span>
+        <span class="site-desc">Tu Tienda de Mascota</span>
+      </a>
+      <!-- / #logo-header -->
+
+      <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li>Servicios</li>
+            <li><a href="trabajeconnosotros.html">Trabaje con Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- / nav -->
+    </header>
+    
+
+    <footer id="servicios">
+        <section>
+          <figure>
+            <img
+              src="https://img.lalr.co/cms/2021/07/08164347/AgroAncla_ViajesMascotas_p17.jpg"
+              alt="Imagen"
+            /><br />
+            <a href="index.html">Regresar al inicio</a>
+          </figure>
+        </section>
+      </footer>
+  </body>
+</html>

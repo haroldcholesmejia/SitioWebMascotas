@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Boby - La Tienda de Mascotas</title>
+    <script type="text/javascript">
+      function contacto() {
+        var str1 = document.getElementById("name").value;
+        var str2 = document.getElementById("mail").value;
+        var str3 = document.getElementById("msg").value;
+        var str4 = document.getElementById("celular").value;
+
+        if (str1 == "") {
+          alert("Debe digitar su nombre completo");
+        } else if (str2 == "") {
+          alert("Debe digitar un correo electronico");
+        } else if (str4 == "") {
+          alert("Debe digitar el celular");
+        } else if (str3 == "") {
+          alert("Debe digitar el mensaje");
+        } else {
+          alert("Mensaje Enviado");
+          document.getElementById("name").value = "";
+          document.getElementById("mail").value = "";
+          document.getElementById("msg").value = "";
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+
+  <body>
+    <header id="main-header">
+      <a id="logo-header" href="#">
+        <span class="site-name" style="font-size: 40px">Boby</span>
+        <span class="site-desc">Tu Tienda de Mascota</span>
+      </a>
+      <!-- / #logo-header -->
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="trabajeconnosotros.html">Trabaje con Nosotros</a></li>
+          <li>Contacto</li>
+        </ul>
+      </nav>
+      <!-- / nav -->
+    </header>
+
+    <footer id="contacto">
+      <section>
+        <figure>
+          <div>
+            <h1>Contactenos</h1>
+            
+            <form>
+              <ul>
+                <li>
+                  <label for="name">Nombre:</label>
+                  <input type="text" id="name" name="user_name" />
+                </li>
+                <li>
+                  <label for="mail">Email:</label>
+                  <input type="email" id="mail" name="user_mail" />
+                </li>
+                <li>
+                  <label for="celular">Celular:</label>
+                  <input type="text" id="celular" name="celular" />
+                </li>
+                <li>
+                  <label for="msg">Mensaje:</label>
+                  <textarea id="msg" name="user_message"></textarea>
+                </li>
+                <li>
+                  <input type="button" value="Enviar" onclick="contacto()" />
+                </li>
+              </ul>
+            </form>
+
+            <a href="index.html">Regresar al inicio</a>
+          </div>
+        </figure>
+      </section>
+    </footer>
+  </body>
+</html>

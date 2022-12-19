@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Boby - La Tienda de Mascotas</title>
+    <script type="text/javascript">
+      function trabajeconnosotros() {
+        var str1 = document.getElementById("nombre").value;
+        var str2 = document.getElementById("apellido").value;
+        var str3 = document.getElementById("mail").value;
+        var str4 = document.getElementById("edad").value;
+        var str5 = document.getElementById("telefono").value;
+          var str7 = document.getElementById("profesion").value;
+        var str9 = document.getElementById("msg").value;
+        var str10 = document.getElementById("adjunto").value;
+
+        if (str1 == "") {
+          alert("Debe digitar su Nombre");
+        } else  if (str2 == "") {
+          alert("Debe digitar su Apellido");
+        } else  if (str3 == "") {
+          alert("Debe digitar su Correo Electronico");
+        } else if (str4 == "") {
+          alert("Debe digitar su Edad");
+        } else  if (str5 == "") {
+          alert("Debe digitar su Telefono");
+        } else  if (str7 == "") {
+          alert("Debe digitar su Profesión");
+        } else  if (str9 == "") {
+          alert("Debe digitar su comentario");
+        } else if (str10 == "") {
+          alert("Debe adjuntar su curriculum");
+        } else {
+          alert("Mensaje Enviado");
+          document.getElementById("nombre").value="";
+          document.getElementById("apellido").value="";
+          document.getElementById("mail").value="";
+          document.getElementById("edad").value="";
+          document.getElementById("telefono").value="";
+          document.getElementById("profesion").value="";
+          document.getElementById("msg").value="";
+          document.getElementById("adjunto").value="";
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+
+  <body>
+    <header id="main-header">
+      <a id="logo-header" href="#">
+        <span class="site-name" style="font-size: 40px">Boby</span>
+        <span class="site-desc">Tu Tienda de Mascota</span>
+      </a>
+      <!-- / #logo-header -->
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li>Trabaje con Nosotros</li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- / nav -->
+    </header>
+    
+
+    <footer id="trabajeconnosotros">
+      <section>
+        <figure>
+          <div>
+            <h1>Trabaje con Nosotros</h1>    
+            <form>
+                    
+                
+              <ul>
+               
+                <li>
+                  <label for="name">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre" />
+                </li>
+                <li>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" />
+                  </li>
+                <li>
+                  <label for="mail">Email:</label>
+                  <input type="email" id="mail" name="mail" />
+                </li>
+                <li>
+                    <label for="Edad">Edad:</label>
+                    <input type="text" id="edad" name="edad" />
+                  </li>
+                  <li>
+                    <label for="telefono">Telefono:</label>
+                    <input type="email" id="telefono" name="telefono" />
+                  </li>
+                  <li>
+                    <label for="genero">Genero:</label>
+                    <select name="genero" id="genero">
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                    </select>
+                    
+                  </li>
+                  <li>
+                    <label for="profesion">Profesión:</label>
+                    <input type="email" id="profesion" name="profesion" />
+                  </li>
+                  <li>
+                    <label for="area">Area de Postulación:</label>
+                    <select name="area" id="area">
+                        <option value="Sistemas">Sistemas</option>
+                        <option value="Contabilidad">Contabilidad</option>
+                        <option value="Recursos_Humanos">Recursos Humanos</option>
+                        <option value="Oficios_varios">Oficios Varios</option>
+                        <option value="Vendedor">Vendedor</option>
+                    </select>
+                    
+                  </li>
+                <li>
+                  <label for="msg">Cuentanos de ti:</label>
+                  <textarea id="msg" name="user_message"></textarea>
+                </li>
+                <li>
+                    <label for="adjunto">Adjuntar Curriculum:</label>
+                    <input type="file" id="adjunto" name="adjunto"></textarea>
+                  </li>
+                <li>
+                  <input type="button" value="Enviar" onclick="trabajeconnosotros()" />
+                </li>
+              </ul>
+            </form>
+
+            <a href="index.html">Regresar al inicio</a>
+          </div>
+        </figure>
+      </section>
+    </footer>
+  </body>
+</html>
